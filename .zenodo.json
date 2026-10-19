@@ -1,0 +1,21 @@
+{
+  "title": "VoI-TinyML-RF: reference implementation of a value-aware RF-enabled TinyML architecture for environmental monitoring",
+  "description": "Code for the computational experimental evaluation in 'Value-Aware RF-Enabled TinyML Embedded Architecture for Intelligent Environmental Monitoring in Resource-Constrained Environments: A Computational Experimental Evaluation' (ISA Journal of Engineering and Technology, 2026).",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Isogun, Oluwatomisin",
+      "affiliation": "Olusegun Agagu University of Science and Technology",
+      "orcid": "0009-0009-1419-7928"
+    }
+  ],
+  "license": "mit",
+  "keywords": ["TinyML", "Value of Information", "LoRa", "adaptive RF telemetry", "environmental monitoring", "embedded machine learning"],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23337367",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    }
+  ]
+}
