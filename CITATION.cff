@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Value-Aware RF-Enabled TinyML for Environmental Monitoring (Phase-1 experiment code)"
+authors:
+  - family-names: Isogun
+    given-names: Oluwatomisin
+    orcid: "https://orcid.org/0009-0009-1419-7928"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-19"
+repository-code: "https://github.com/TosinISOGUN/VoI-TinyML-RF"
+preferred-citation:
+  type: article
+  title: "Value-Aware RF-Enabled TinyML Embedded Architecture for Intelligent Environmental Monitoring in Resource-Constrained Environments: A Computational Experimental Evaluation"
+  authors:
+    - family-names: Nnaji
+      given-names: Kelechi Timothy
+    - family-names: Isogun
+      given-names: Oluwatomisin
+      orcid: "https://orcid.org/0009-0009-1419-7928"
+    - family-names: Wanisi
+      given-names: Chi Mac-Braine
+    - family-names: Dominic
+      given-names: Edeh Chukwuemeka
+  journal: "ISA Journal of Engineering and Technology (ISAJET)"
+  volume: 3
+  issue: 5
+  start: 50
+  end: 68
+  year: 2026
+  doi: "10.5281/zenodo.23337367"

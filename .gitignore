@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.DS_Store
+Value_Aware_RF_Enabled_TinyML_Embedded_Architecture_for_Intelligent.pdf
+# results/ is committed so readers can see outputs without running the code

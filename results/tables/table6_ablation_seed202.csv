@@ -1,0 +1,7 @@
+variant,packets,bytes,energy_mj,pdr,cedr,delivered,critical_delivered,critical_total
+Full B3,127,3444,14496.169,0.937,0.9265,119,63,68
+Without uncertainty,101,2692,12826.8679,0.9307,0.8382,94,57,68
+Without novelty,127,3504,14987.8452,0.9291,0.9412,118,64,68
+Without information age,158,4036,16654.6466,0.9304,0.9559,147,65,68
+Without severity,77,1664,5723.2682,0.9351,0.2206,72,15,68
+Without link adaptation,127,3444,5391.196,0.7323,0.6618,93,45,68
