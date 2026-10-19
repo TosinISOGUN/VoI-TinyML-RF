@@ -10,6 +10,8 @@ The architecture lets an on-device classifier decide not only *what* the environ
 
 ## Quick start
 
+Requires Python 3.10 or later (developed and tested with 3.13).
+
 ```bash
 git clone https://github.com/TosinISOGUN/VoI-TinyML-RF.git
 cd VoI-TinyML-RF
@@ -93,7 +95,12 @@ Exact McNemar tests, RF against each other model:
 
 The CNN here is stronger than the published one, so the RF-vs-CNN difference is not significant here.
 
+<details>
+<summary>Note on model sizes</summary>
+
 Sizes are pickled (scikit-learn) or `torch.save` (CNN) artifacts and vary slightly by library version and platform (about ±0.05 KB between Windows and Linux). The MLP is larger than the paper's because the pickled scikit-learn object carries training state: its weights are 12.7 KB, but the Adam optimizer moments (25.5 KB), an early-stopping copy of the best weights (12.8 KB), the loss history and the scaler are pickled with it.
+
+</details>
 
 ### Communication (300 modeled link realizations)
 
@@ -107,7 +114,8 @@ Sizes are pickled (scikit-learn) or `torch.save` (CNN) artifacts and vary slight
 
 Relative to B0, B3 reduces transmissions by 62.1% (paper 72.5%), bytes by 67.9% (74.2%) and modeled energy by 26.3% (32.1%), while raising PDR by 21.2 points (23.7) and CEDR by 20.7 points (10.6). The paper's central finding holds: B2 uses the least energy but B3 delivers far more reliably.
 
-Empirical 2.5–97.5 percentile ranges across realizations are wider than the paper's:
+<details>
+<summary>Spread across realizations (2.5–97.5 percentiles) compared with the paper</summary>
 
 | Range | This code | Paper |
 |---|---|---|
@@ -115,7 +123,9 @@ Empirical 2.5–97.5 percentile ranges across realizations are wider than the pa
 | B3 PDR (%) | 87.0–96.1 | 90.22–97.83 |
 | B3 energy (mJ) | 8,933–15,187 | 8,775.85–12,916.25 |
 
-The paper's B0 range is narrower than independent per-packet draws alone would give (about ±4.9 points at PDR ≈ 0.71 over 335 packets), so its link-trace model must differ from the one assumed here (see Assumption 1). The time-correlated AR(1) shadowing used here makes whole realizations better or worse than average, which widens the ranges.
+The ranges here are wider than the paper's. The paper's B0 range is narrower than independent per-packet draws alone would give (about ±4.9 points at PDR ≈ 0.71 over 335 packets), so its link-trace model must differ from the one assumed here (see Assumption 1). The time-correlated AR(1) shadowing used here makes whole realizations better or worse than average, which widens the ranges.
+
+</details>
 
 ### Ablation (link seed 202)
 
@@ -139,6 +149,10 @@ Small model differences (for example the RF confusion matrix) are expected acros
 ## Limitations
 
 As in the paper, this is a computational study. Model file sizes are not embedded Flash/SRAM figures, and RF energy, PDR and CEDR come from models, not radio hardware. Next steps are multivariate validation on the Beijing Multi-Site Air Quality dataset and measurements on a physical MCU and LoRa platform.
+
+## Maintainer
+
+Oluwatomisin Isogun ([ORCID 0009-0009-1419-7928](https://orcid.org/0009-0009-1419-7928), [@TosinISOGUN](https://github.com/TosinISOGUN)). Questions and issues are welcome on the [issue tracker](https://github.com/TosinISOGUN/VoI-TinyML-RF/issues).
 
 ## Citation
 
