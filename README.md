@@ -6,7 +6,19 @@ Reference implementation of the Phase-1 computational experiment in:
 
 The architecture lets an on-device classifier decide not only *what* the environment is doing, but *whether* that information is worth sending and *how much radio reliability* to spend on it. An Environmental Value-of-Information (VoI) score combines predicted severity, prediction uncertainty, temporal novelty and information age; a cross-layer controller turns that score and the link state into a transmit/suppress decision, a payload size, a LoRa spreading factor and a transmit power.
 
-> **Note.** Values the paper states are reproduced exactly where possible; details it does not state are documented under [Assumptions](#assumptions-and-differences-from-the-paper). All RF results are simulation/model-based, not radio measurements.
+## Key results
+
+On the weekly Mauna Loa CO₂ record (2,231 sequences, chronological 70/15/15 split):
+
+- **Prediction.** The selected Random Forest reaches 89.85% test accuracy and 87.6% macro-F1 on a three-class future-state task. A 3.9 KB tiny 1-D CNN comes within 0.3 points of its accuracy.
+- **Communication.** Against periodic fixed-RF telemetry (B0), the value-aware controller (B3) sends 62% fewer packets and 68% fewer bytes, and uses 26% less modeled RF energy.
+- **Reliability.** Mean packet-delivery ratio rises from 71% to 92%, and critical-event delivery from 71% to 92%, across 300 modeled link realizations.
+- **Trade-off.** Event-triggered telemetry (B2) uses the least energy but delivers only about 71% of packets, so minimizing energy alone does not give the most useful system.
+- **Ablation.** Removing RF-link adaptation causes the largest drop in delivery reliability.
+
+![Packets, modeled RF energy, PDR and CEDR for the four communication systems](results/figures/fig5_communication.png)
+
+> **Note.** Values the paper states are reproduced exactly where possible. Where the paper does not specify a detail, this code makes an explicit, configurable choice, and some results differ from the published ones as a result (for example the link model, the calibrated thresholds and the CNN). Every such difference is listed under [Assumptions](#assumptions-and-differences-from-the-paper). All RF results are simulation/model-based, not radio measurements.
 
 ## Quick start
 
