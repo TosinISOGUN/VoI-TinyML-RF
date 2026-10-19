@@ -1,5 +1,5 @@
 {
-  "title": "VoI-TinyML-RF: reference implementation of a value-aware RF-enabled TinyML architecture for environmental monitoring",
+  "title": "Value-Aware RF-Enabled TinyML Embedded Architecture for Intelligent Environmental Monitoring in Resource-Constrained Environments: A Computational Experimental Evaluation",
   "description": "Code for the computational experimental evaluation in 'Value-Aware RF-Enabled TinyML Embedded Architecture for Intelligent Environmental Monitoring in Resource-Constrained Environments: A Computational Experimental Evaluation' (ISA Journal of Engineering and Technology, 2026).",
   "upload_type": "software",
   "creators": [

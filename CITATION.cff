@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the paper below."
-title: "VoI-TinyML-RF: reference implementation of a value-aware RF-enabled TinyML architecture for environmental monitoring"
+title: "Value-Aware RF-Enabled TinyML Embedded Architecture for Intelligent Environmental Monitoring in Resource-Constrained Environments: A Computational Experimental Evaluation"
 authors:
   - family-names: Isogun
     given-names: Oluwatomisin
