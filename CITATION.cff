@@ -6,6 +6,7 @@ authors:
     given-names: Oluwatomisin
     orcid: "https://orcid.org/0009-0009-1419-7928"
 license: MIT
+doi: "10.5281/zenodo.23478036"
 version: "1.0.0"
 date-released: "2026-10-19"
 repository-code: "https://github.com/TosinISOGUN/VoI-TinyML-RF"

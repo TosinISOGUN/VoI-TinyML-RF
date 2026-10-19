@@ -1,5 +1,7 @@
 # Value-Aware RF-Enabled TinyML for Environmental Monitoring
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23478036.svg)](https://doi.org/10.5281/zenodo.23478036)
+
 Reference implementation of the Phase-1 computational experiment in:
 
 > Nnaji, K. T., Isogun, O., Wanisi, C. M.-B., & Dominic, E. C. (2026). Value-aware RF-enabled TinyML embedded architecture for intelligent environmental monitoring in resource-constrained environments: A computational experimental evaluation. *ISA Journal of Engineering and Technology (ISAJET)*, 3(5), 50–68. https://doi.org/10.5281/zenodo.23337367
@@ -168,7 +170,7 @@ Oluwatomisin Isogun ([ORCID 0009-0009-1419-7928](https://orcid.org/0009-0009-141
 
 ## Citation
 
-If you use this code, please cite the paper (see `CITATION.cff`).
+If you use this code, please cite the paper and the archived software release (DOI [10.5281/zenodo.23478036](https://doi.org/10.5281/zenodo.23478036)); see `CITATION.cff`.
 
 ## License
 
